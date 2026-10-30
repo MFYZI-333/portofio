@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore MAFIOUZI travel guides, Moroccan and Algerian recipes, and local culture.">
+  <link rel="canonical" href="https://mfyzi.com/articles.html">
+  <meta property="og:url" content="https://mfyzi.com/articles.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Journal | MAFIOUZI">
+  <meta property="og:description" content="Explore MAFIOUZI travel guides, Moroccan and Algerian recipes, and local culture.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Journal | MAFIOUZI">
+  <meta name="twitter:description" content="Explore MAFIOUZI travel guides, Moroccan and Algerian recipes, and local culture.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+  <title>The Journal | MAFIOUZI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/config.js"></script>
+  <script defer src="data/articles.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/monetization.js"></script>
+</head>
+<body data-page="articles">
+  <div data-site-header></div>
+  <main class="page-main section-wrap">
+    <section class="page-heading"><span class="eyebrow">MAFIOUZI FIELD NOTES</span><h1>Two countries.<br><span class="accent-green">Stories without borders.</span></h1><p>Travel guides, dishes with a story, and the culture that brings it all together.</p></section>
+    <section class="article-tools" aria-label="Search and filter stories">
+      <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="article-search" placeholder="Search a place, dish or story..." aria-label="Search articles"></label>
+      <div class="filter-row" role="group" aria-label="Filter by topic">
+        <button class="filter-button active" type="button" data-filter="all">Everything <span data-count="all"></span></button>
+        <button class="filter-button" type="button" data-filter="travel">Travel <span data-count="travel"></span></button>
+        <button class="filter-button" type="button" data-filter="food">Food <span data-count="food"></span></button>
+        <button class="filter-button" type="button" data-filter="culture">Culture <span data-count="culture"></span></button>
+      </div>
+      <div class="journal-selects">
+        <label><span>COUNTRY</span><select id="country-filter" aria-label="Filter by country"><option value="">All places</option><option value="Morocco">🇲🇦 Morocco</option><option value="Algeria">🇩🇿 Algeria</option></select></label>
+        <label><span>EXPLORE</span><select id="subcategory-filter" aria-label="Filter by travel or food category"><option value="">All stories</option></select></label>
+      </div>
+    </section>
+    <p class="results-label" data-results-label></p>
+    <div class="article-grid articles-page-grid" data-article-list="all"></div>
+    <div class="ad-placement" data-ad-slot="journalAfterStories" aria-label="Advertisement"></div>
+    <div class="empty-state" data-empty-state hidden><span>✳</span><h2>No stories found.</h2><p>Try a different search or broaden your filters.</p><button class="button button-dark" type="button" data-reset-filters>Show every story</button></div>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>
